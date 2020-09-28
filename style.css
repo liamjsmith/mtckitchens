@@ -300,6 +300,12 @@ div {
   .header-gallery {
     height: 900px;
   }
+  .header-gallery .text-container {
+    width: 40%;
+  }
+  .header-gallery .text-container h1 {
+    font-size: 52px;
+  }
   .onScroll {
     background-color: white;
     -webkit-box-shadow: 0px 5px 5px 0px #828787;
@@ -326,11 +332,6 @@ div {
     background: #FFF;
     border: 1px solid #d4b254;
     color: #d4b254;
-  }
-}
-@media only screen and (min-width: 932px) {
-  .header-gallery .text-container {
-    width: 30%;
   }
 }
 .aboutus-container .aboutus-text {
