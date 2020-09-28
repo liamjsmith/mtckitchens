@@ -1,0 +1,251 @@
+.aboutus-container{
+    .aboutus-text{
+        padding:20px;
+        text-align:center;
+        h4{
+            color:#d4b254;
+            font-size:13px;
+        }
+        h3{
+            color:#222;
+            font-size:28px;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            color:#777777;
+            font-size:15px;
+        }
+    }
+    .aboutus-image{
+        img{
+            max-width:100%;
+        }
+    }
+}
+@media only screen and (min-width: 932px){
+    .aboutus-container{
+        display:flex;
+        flex-direction:row-reverse;
+        .aboutus-text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items:flex-start;
+          p{
+              width:80%;
+              text-align:left;
+          }
+          a{
+              width:22%;
+          }
+        }
+    }
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  padding:80px 0;  
+  .reviews-container{
+      width:70%;
+      margin:0 auto;
+      text-align:center;  
+      display:none;
+      .title{
+          font-size:13px;
+          color:#d4b254;
+      }
+      h2{
+          font-size:22px;
+      }
+      p, .author{
+          font-size:15px;
+      }
+  }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -30px;
+  padding: 4px;
+  color:#d4b254;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  svg{
+      height:50px;
+  }
+}
+
+.next{
+    right:3%;
+}
+.prev{
+    left:3%;
+}
+
+@media only screen and (min-width: 932px){
+    .next {
+        position: absolute;
+        right: 10%;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev{
+          left:10%;
+      }
+}
+
+
+
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+ 
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    @media only screen and (min-width: 932px){
+        top:100px
+    }
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  
+
+.image-gallery-container{
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        li{
+            width:45%;
+            padding:2%;
+            @media only screen and (min-width: 932px){
+                width:inherit;
+            }
+        }
+    }
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
